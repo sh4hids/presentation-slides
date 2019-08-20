@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck slides.mdx",
-    "export": "mdx-deck pdf slides.mdx"
+    "export": "mdx-deck-export pdf slides.mdx"
   },
   "repository": {
     "type": "git",
