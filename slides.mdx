@@ -1,0 +1,51 @@
+import { hack, prism } from "@mdx-deck/themes";
+export const themes = [hack, prism];
+import { Image } from "mdx-deck";
+import { Container, Text } from "./components";
+import anyqsn from "./assets/images/any-qsn.jpeg";
+
+<Container>
+
+# Presentation title
+
+<Text color="white">presented by</Text>
+
+#### Shahidul Islam Majumder
+
+</Container>
+
+---
+
+<Container>
+
+# Slide 1
+
+> "Hello there..."
+
+- Point one
+- Point Two
+- Point Three
+
+</Container>
+
+---
+
+<Container>
+
+```jsx
+<CodeSnippet />
+```
+
+```bash
+$ npm i -D mdx-deck
+```
+
+</Container>
+
+---
+
+<Container variant="centered">
+
+<img src={anyqsn} />
+
+</Container>

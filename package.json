@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "mdx-deck slides.mdx",
+    "export": "mdx-deck pdf slides.mdx"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@mdx-deck/themes": "^3.0.8",
     "mdx-deck": "^3.0.9"
+  },
+  "dependencies": {
+    "styled-components": "^4.3.2",
+    "styled-system": "^5.1.0"
   }
 }
