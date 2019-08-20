@@ -44,6 +44,10 @@ const Wrapper = styled.div`
     color: GREENYELLOW;
   }
 
+  code {
+    color: GREENYELLOW;
+  }
+
   ${({ variant }) => {
     switch (variant) {
       case "centered":
@@ -53,6 +57,7 @@ const Wrapper = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-direction: column;
         `;
       default:
         return ``;
