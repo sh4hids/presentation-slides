@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { color, space, textAlign } from "styled-system";
 
 const H1 = styled.h1`
-  font-size: 3.052em;
   ${color};
   ${space};
   ${textAlign};

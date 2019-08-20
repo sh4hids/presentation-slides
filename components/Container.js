@@ -23,9 +23,25 @@ const Wrapper = styled.div`
     font-size: 1em;
   }
 
+  img.small {
+    max-width: 70%;
+  }
+  
+  ul {
+    text-align: left;
+    
+    li {
+      margin-bottom: 16px;
+    }
+  }
+
   pre {
     border-radius: 4px;
     font-size: 0.9em;
+  }
+  
+  code {
+    color: GREENYELLOW;
   }
 
   ${({ variant }) => {
@@ -37,6 +53,7 @@ const Wrapper = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-direction: column;
         `;
       default:
         return ``;
