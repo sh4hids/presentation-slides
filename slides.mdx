@@ -1,6 +1,6 @@
 import { hack, prism } from "@mdx-deck/themes";
 export const themes = [hack, prism];
-import { Appear, SplitRight } from "mdx-deck";
+import { Appear, SplitRight, Split } from "mdx-deck";
 import { Container, Text } from "./components";
 
 import anyqsn from "./assets/images/any-qsn.jpeg";
@@ -10,16 +10,63 @@ import noopFn from "./assets/images/noop-fn.png";
 import noopLogger from "./assets/images/noop-logger.png";
 import npmSearch from "./assets/images/npm-search.png";
 import packageJson from "./assets/images/packagejson.png";
+import responsiveEmail from "./assets/images/responsive-email.gif";
+import mjmlIntro from "./assets/images/screen.png";
 
 <Container>
 
-# Build and Publish a npm package
+# Responsive Email in MJML
 
 <Text color="white">presented by</Text>
 
 #### Shahidul Islam Majumder
 
 </Container>
+
+---
+
+<Split>
+
+<Container>
+
+  <ul>
+  <Text variant="h2">Why responsive email?</Text>
+  <ul>
+  <li>Increase Click-through Rate</li>
+  <li>Increase Traffic & Business Leads</li>
+  <li>It Saves Viewers’ Time</li>
+  </ul>
+  </ul>
+</Container>
+
+<Container textAlign="center">
+  <img src={responsiveEmail} />
+</Container>
+
+</Split>
+
+---
+
+<Split>
+
+<Container textAlign="center">
+  <img src={mjmlIntro} />
+</Container>
+
+<Container>
+
+  <ul>
+  <Text variant="h2">What is MJML?</Text>
+  <Text>A markup language developed by Mailjet</Text>
+  <ul>
+  <li>Responsive by design</li>
+  <li>Component based</li>
+  <li>Great tooling</li>
+  </ul>
+  </ul>
+</Container>
+
+</Split>
 
 ---
 
