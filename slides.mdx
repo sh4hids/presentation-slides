@@ -12,10 +12,11 @@ import npmSearch from "./assets/images/npm-search.png";
 import packageJson from "./assets/images/packagejson.png";
 import responsiveEmail from "./assets/images/responsive-email.gif";
 import mjmlIntro from "./assets/images/screen.png";
+import onlineEditor from "./assets/images/onlineeditor.png";
 
 <Container>
 
-# Responsive Email in MJML
+# Responsive Email Design with MJML
 
 <Text color="white">presented by</Text>
 
@@ -30,7 +31,7 @@ import mjmlIntro from "./assets/images/screen.png";
 <Container>
 
   <ul>
-  <Text variant="h2">Why responsive email?</Text>
+  <Text variant="h2">Why (responsive) email?</Text>
   <ul>
   <li>Increase Click-through Rate</li>
   <li>Increase Traffic & Business Leads</li>
@@ -72,147 +73,119 @@ import mjmlIntro from "./assets/images/screen.png";
 
 <Container>
 
-## Why should you build
+<Split>
 
-- for fun
-- to learn how to create one
-- to solve a problem
-- to share your work
+<Container >
 
-##### `Let's have some inspiration...`
-
-</Container>
-
----
-
-<Container variant="centered">
-
-<img src={isOdd} />
+- `mjml`: Root of the document (like html tag)
+- `mj-body`: Content container, you can set bg color, width etc.
+- `mj-section`: Like grid row
+- `mj-column`: Like grid column
 
 </Container>
-
----
-
-<Container variant="centered">
-
-<img src={isThirteen} />
-
-</Container>
-
----
-
-<Container variant="centered">
-
-<img src={noopFn} />
-
-</Container>
-
----
-
-<Container variant="centered">
-
-<img src={noopLogger} />
-
-</Container>
-
----
 
 <Container>
 
-## Steps
-
-<ul>
-  <Appear>
-    <li>Choosing a name</li>
-    <li>Setting up dev environment</li>
-    <li>Writing your package</li>
-    <li>Writing documentation</li>
-    <li>Publishing to npm</li>
-  </Appear>
-</ul>
+```
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <!-- First column content -->
+      </mj-column>
+      <mj-column>
+        <!-- Second column content -->
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
+```
 
 </Container>
+
+</Split>
+
+</Container>
+
+---
+
+<Split>
+
+<Container>
+
+- `mj-text`
+- `mj-button`
+- `mj-image`
+- `mj-social`
+  - `mj-social-element`
+- `mj-include`
+- `mj-spacer`
+
+</Container>
+
+<Container>
+
+- `mj-carousel`
+  - `mj-carousel-image`
+- `mj-divider`
+- `mj-hero`
+- `mj-navbar`
+  - `mj-navbar-link`
+- `mj-raw`
+- `mj-wrapper`
+
+</Container>
+
+</Split>
 
 ---
 
 <Container variant="centered">
 
-### Choosing a name
+<Text variant="h4">Online editor</Text>
 
-<img src={npmSearch} class="small" />
+<a href="https://mjml.io/try-it-live" target="_blank"><img src={onlineEditor} /></a>
 
 </Container>
 
 ---
+
+<Split>
 
 <Container>
 
-### Set up dev environment
+<Text variant="h5">In CLI</Text>
 
-<ul>
-  <Appear>
-    <li>Create dir for your package</li>
-    <li>Init package.json (npm init)</li>
-    <ul>
-      <li>name</li>
-      <li>version</li>
-    </ul>
-    <li>Setup build tools (Webpack, Rollup, Parcel etc.)</li>
-    <li>Add editorconfig, linter, prettier etc.</li>
-  </Appear>
-</ul>
+`npm i -S mjml` <br /><br />
+`mjml input.mjml -o output.html`
+
+<Text variant="h5">In `node.js` -----></Text>
 
 </Container>
-
----
 
 <Container>
 
-### Writing your package
+```
+const mjml2html = require("mjml");
 
-Do whatever you want...
-
-</Container>
-
----
-
-<Container>
-
-### Writing documentation
-
-Add detailed instructions on how to use your package on `README.md`
-
-##### At least add these instructions
-
-- Install
-- Usage
-- Uninstall
+const htmlOutput = mjml2html(`
+<mjml>
+<mj-body>
+  <mj-section>
+    <mj-column>
+      <mj-text>
+        Hello World!
+      </mj-text>
+    </mj-column>
+  </mj-section>
+</mj-body>
+</mjml>
+`, {minify: false})
+```
 
 </Container>
 
----
-
-<Container>
-
-### Publishing to npm
-
-You must have an account on `npmjs.com` to publish your package.
-
-##### Main steps to publish
-
-- Build
-- Test
-- npm login
-
-</Container>
-
----
-
-<Container variant="centered">
-
-### `$ npm publish`
-
-</Container>
+</Split>
 
 ---
 
