@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { textAlign } from "styled-system";
+import { textAlign, space } from "styled-system";
 
 const Wrapper = styled.div`
   font-size: 24px;
@@ -50,6 +50,7 @@ const Wrapper = styled.div`
   }
 
   ${textAlign};
+  ${space};
 
   ${({ variant }) => {
     switch (variant) {

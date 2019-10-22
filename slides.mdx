@@ -1,7 +1,8 @@
-import { hack, prism } from "@mdx-deck/themes";
-export const themes = [hack, prism];
+import { yellow, prism } from "@mdx-deck/themes";
+import { aws } from "./themes";
+export const themes = [yellow, aws, prism];
 import { Appear, SplitRight, Split } from "mdx-deck";
-import { Container, Text } from "./components";
+import { Blockquote, Container, Text } from "./components";
 
 import anyqsn from "./assets/images/any-qsn.jpeg";
 import isOdd from "./assets/images/is-odd.png";
@@ -14,13 +15,29 @@ import responsiveEmail from "./assets/images/responsive-email.gif";
 import mjmlIntro from "./assets/images/screen.png";
 import onlineEditor from "./assets/images/onlineeditor.png";
 
-<Container>
+<Container textAlign="center">
 
-# Responsive Email Design with MJML
+# AWS IAM
 
-<Text color="white">presented by</Text>
+presented by
 
 #### Shahidul Islam Majumder
+
+</Container>
+
+---
+
+<Container p={72} textAlign="center">
+
+<Blockquote p={32}>
+
+<Text variant="h4">
+  AWS Identity and Access Management (IAM) is a web service that helps you
+  securely control access to AWS resources. You use IAM to control who is
+  authenticated (signed in) and authorized (has permissions) to use resources.
+</Text>
+
+</Blockquote>
 
 </Container>
 
